@@ -16,6 +16,8 @@ from .utils import reduce_loss, weight_reduce_loss, weighted_loss
 
 from .obb.poly_iou_loss import PolyIoULoss, PolyGIoULoss
 
+from .obb.abfl_loss import ABFLLoss
+
 __all__ = [
     'accuracy', 'Accuracy', 'cross_entropy', 'binary_cross_entropy',
     'mask_cross_entropy', 'CrossEntropyLoss', 'sigmoid_focal_loss',
@@ -24,5 +26,5 @@ __all__ = [
     'IoULoss', 'BoundedIoULoss', 'GIoULoss', 'GHMC', 'GHMR', 'reduce_loss',
     'weight_reduce_loss', 'weighted_loss', 'L1Loss', 'l1_loss', 'isr_p',
     'carl_loss', 'AssociativeEmbeddingLoss', 'GaussianFocalLoss',
-    'QualityFocalLoss', 'DistributionFocalLoss'
+    'QualityFocalLoss', 'DistributionFocalLoss', 'ABFLLoss'
 ]

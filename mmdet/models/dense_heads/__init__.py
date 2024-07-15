@@ -26,10 +26,14 @@ from .obb.obb_fcos_head import OBBFCOSHead
 from .obb.s2a_head import S2AHead
 from .obb.odm_head import ODMHead
 
+from .obb.obb_fcos_abfl_head import OBBFCOSABFLHead
+from .obb.obb_fcos_oasl_head import OBBFCOSOASLHead
+
 __all__ = [
     'AnchorFreeHead', 'AnchorHead', 'GuidedAnchorHead', 'FeatureAdaption',
     'RPNHead', 'GARPNHead', 'RetinaHead', 'RetinaSepBNHead', 'GARetinaHead',
     'SSDHead', 'FCOSHead', 'RepPointsHead', 'FoveaHead',
     'FreeAnchorRetinaHead', 'ATSSHead', 'FSAFHead', 'NASFCOSHead',
-    'PISARetinaHead', 'PISASSDHead', 'GFLHead'
+    'PISARetinaHead', 'PISASSDHead', 'GFLHead', 'OBBFCOSABFLHead', 
+    'OBBFCOSOASLHead',
 ]
